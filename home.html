@@ -26,7 +26,7 @@
         <div class="sm:lg:flex pb-4 justify-end gap-4 mt-4">
             <div class="flex justify-center items-center gap-4 w-[123px] h-[52px] bg-[#41ff6b1a] rounded-3xl">
                 <div class="font-bold">
-                    <p>0</p>
+                    <p id="heart-count">0</p>
                 </div>
                 <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="">
             </div>
@@ -56,7 +56,7 @@
                         <div class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-2xl flex justify-center items-center">
                             <img class="w-[32px] h-[32px] absolute" src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="w-[24px] h-[24px] fa-regular fa-heart"></i>
+                        <i class="w-[24px] h-[24px] fa-regular fa-heart cursor-pointer" onclick="increaseHeartCount()"></i>
                     </div>
                     <div class="w-[372px] h-[55px] mx-auto pt-9">
                         <h1 class="text-[#111111] text-2xl">N</h1>
@@ -79,7 +79,7 @@
                         <div class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-2xl flex justify-center items-center">
                             <img class="w-[32px] h-[32px] absolute" src="./assets/ambulance.png" alt="">
                         </div>
-                        <i class="w-[24px] h-[24px] fa-regular fa-heart"></i>
+                        <i class="w-[24px] h-[24px] fa-regular fa-heart cursor-pointer" onclick="increaseHeartCount()"></i>
                     </div>
                     <div class="w-[372px] h-[55px] mx-auto pt-9">
                         <h1 class="text-[#111111] text-2xl">A</h1>
@@ -102,7 +102,7 @@
                         <div class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-2xl flex justify-center items-center">
                             <img class="w-[32px] h-[32px] absolute" src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="w-[24px] h-[24px] fa-regular fa-heart"></i>
+                        <i class="w-[24px] h-[24px] fa-regular fa-heart cursor-pointer" onclick="increaseHeartCount()"></i>
                     </div>
                     <div class="w-[372px] h-[55px] mx-auto pt-9">
                         <h1 class="text-[#111111] text-2xl">E</h1>
@@ -125,7 +125,7 @@
                         <div class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-2xl flex justify-center items-center">
                             <img class="w-[32px] h-[32px] absolute" src="./assets/police.png" alt="">
                         </div>
-                        <i class="w-[24px] h-[24px] fa-regular fa-heart"></i>
+                        <i class="w-[24px] h-[24px] fa-regular fa-heart cursor-pointer" onclick="increaseHeartCount()"></i>
                     </div>
                     <div class="w-[372px] h-[55px] mx-auto pt-9">
                         <h1 class="text-[#111111] text-2xl">P</h1>
@@ -148,7 +148,7 @@
                         <div class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-2xl flex justify-center items-center">
                             <img class="w-[32px] h-[32px] absolute" src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="w-[24px] h-[24px] fa-regular fa-heart"></i>
+                        <i class="w-[24px] h-[24px] fa-regular fa-heart cursor-pointer" onclick="increaseHeartCount()"></i>
                     </div>
                     <div class="w-[372px] h-[55px] mx-auto pt-9">
                         <h1 class="text-[#111111] text-2xl">W</h1>
@@ -171,7 +171,7 @@
                         <div class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-2xl flex justify-center items-center">
                             <img class="w-[32px] h-[32px] absolute" src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="w-[24px] h-[24px] fa-regular fa-heart"></i>
+                        <i class="w-[24px] h-[24px] fa-regular fa-heart cursor-pointer" onclick="increaseHeartCount()"></i>
                     </div>
                     <div class="w-[372px] h-[55px] mx-auto pt-9">
                         <h1 class="text-[#111111] text-2xl">B</h1>
@@ -194,7 +194,7 @@
                         <div class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-2xl flex justify-center items-center">
                             <img class="w-[32px] h-[32px] absolute" src="./assets/fire-service.png" alt="">
                         </div>
-                        <i class="w-[24px] h-[24px] fa-regular fa-heart"></i>
+                        <i class="w-[24px] h-[24px] fa-regular fa-heart cursor-pointer" onclick="increaseHeartCount()"></i>
                     </div>
                     <div class="w-[372px] h-[55px] mx-auto pt-9">
                         <h1 class="text-[#111111] text-2xl">Fire Service Number</h1>
@@ -217,7 +217,7 @@
                         <div class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-2xl flex justify-center items-center">
                             <img class="w-[32px] h-[32px] absolute" src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="w-[24px] h-[24px] fa-regular fa-heart"></i>
+                        <i class="w-[24px] h-[24px] fa-regular fa-heart cursor-pointer" onclick="increaseHeartCount()"></i>
                     </div>
                     <div class="w-[372px] h-[55px] mx-auto pt-9">
                         <h1 class="text-[#111111] text-2xl">A</h1>
@@ -240,7 +240,7 @@
                         <div class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-2xl flex justify-center items-center">
                             <img class="w-[32px] h-[32px] absolute" src="./assets/emergency.png" alt="">
                         </div>
-                        <i class="w-[24px] h-[24px] fa-regular fa-heart"></i>
+                        <i class="w-[24px] h-[24px] fa-regular fa-heart cursor-pointer" onclick="increaseHeartCount()"></i>
                     </div>
                     <div class="w-[372px] h-[55px] mx-auto pt-9">
                         <h1 class="text-[#111111] text-2xl">B</h1>
@@ -271,6 +271,7 @@
             </aside>
         </div>
     </div>
+    <script src="home.js"></script>
 </body>
 
 </html>
