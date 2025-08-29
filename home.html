@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <header class="flex justify-between max-w-[1820px] mx-auto">
-        <div class="sm:lg:flex flex justify-left items-center gap-4">
+    <header class="flex flex-col md:flex-row justify-between items-start md:items-center max-w-full mx-auto px-4 py-4 gap-4">
+        <div class="flex flex-col sm:flex-row items-start justify-left sm:items-center gap-4 sm:gap-4">
             <div>
                 <img src="./assets/logo.png" alt="" class="w-[50px] h-[50px]">
             </div>
@@ -23,8 +23,8 @@
                 <h2>Emergency<br><span>Service</span></h2>
             </div>
         </div>
-        <div class="sm:lg:flex pb-4 justify-end gap-4 mt-4">
-            <div class="flex justify-center items-center gap-4 w-[123px] h-[52px] bg-[#41ff6b1a] rounded-3xl">
+        <div class="flex sm:flex-row w-full md:w-auto pb-4 justify-end gap-4 mt-4">
+            <div class="flex justify-center items-center sm:gap-4 gap-4 w-[123px] h-[52px] bg-[#41ff6b1a] rounded-3xl">
                 <div class="font-bold">
                     <p id="heart-count">0</p>
                 </div>
@@ -42,16 +42,16 @@
         </div>
     </header>
     <div
-        class=".hind-madurai-font w-[1920] h-[239px] bg-linear-to-r from-[#013223] to-[#006747] flex flex-col justify-center items-center">
-        <img class="w-[92px] h-[92px]" src="./assets/logo-dark.png" alt="">
-        <h2 class="text-4xl font-bold text-[#ffffff] pt-4">Emergency Service Directory</h2>
-        <p class="text-[20px] text-[#ffffff] pt-2">Government Emergency Services at Your Fingertip – A Project by
+        class=".hind-madurai-font w-full h-full bg-gradient-to-r from-[#013223] to-[#006747] flex flex-col justify-center items-center px-4 py-8 text-center">
+        <img class="sm:w-[92px] sm:h-[92px] w-[92px] h-[92px]" src="./assets/logo-dark.png" alt="">
+        <h2 class="sm:text-3xl text-4xl font-bold text-[#ffffff] pt-4">Emergency Service Directory</h2>
+        <p class="sm:text-lg text-xl text-[#ffffff] pt-2">Government Emergency Services at Your Fingertip – A Project by
             Government of the People’s Republic of Bangladesh</p>
     </div>
     <!-- card section -->
-    <div class="max-w-[1920px] h-[1613px] bg-[#f5fff6]">
-        <div class="w-[1800px] h-[1140px] mx-auto py-10 sm:grid grid-cols-12 gap-16">
-            <div class="col-span-9 sm:grid grid-flow-col grid-rows-3 gap-8">
+    <div class="w-full h-auto bg-[#f5fff6]">
+        <div class="w-full sm:col-span-1 h-auto sm:mx-auto sm: mx-auto py-10 grid grid-cols-12 gap-16">
+            <div class="col-span-9 grid sm:grid-flow-col grid-rows-3 gap-8">
                 <div class="bg-[#ffffff] rounded-xl w-[436px] h-[360px] shadow-xl/15">
                     <div class="flex justify-between items-center w-[372px] h-[60px] mx-auto pt-13">
                         <div class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-2xl flex justify-center items-center">
@@ -62,8 +62,8 @@
                     </div>
                     <div class="w-[372px] h-[55px] mx-auto pt-9">
                         <h1 class="text-[#111111] text-2xl">National Emergency Number</h1>
-                        <h2 class="font-light text-lg">Emergency Number</h2>
-                        <p class="text-[#111111] font-bold text-3xl pt-3">1994-999999</p>
+                        <h2 id="name2" class="font-light text-lg">Emergency Number</h2>
+                        <p id="number2" class="text-[#111111] font-bold text-3xl pt-3">1994-999999</p>
                         <div class="w-[53px] h-[37px] bg-[#f2f2f2] flex justify-center items-center rounded-full">
                             <h2 class="text-[18px] font-light">A</h2>
                         </div>
@@ -72,7 +72,7 @@
                                 class="box-border border border-[rgba(212,214,213,1)] rounded-md bg- [rgba(255,255,255,1)] w-[182px] h-[40px]"
                                 onclick="increaseCopyButton()"><span><i class="fa-regular fa-copy"></i></span>
                                 Copy</button>
-                            <button class="bg-[#00a63e] w-[182px] h-[40px] rounded-md text-[#ffffff]"><span><i
+                            <button id="call4" class="bg-[#00a63e] w-[182px] h-[40px] rounded-md text-[#ffffff]"><span><i
                                         class="fa-solid fa-phone pr-8 "></i></span>Call</button>
                         </div>
                     </div>
@@ -87,8 +87,8 @@
                     </div>
                     <div class="w-[372px] h-[55px] mx-auto pt-9">
                         <h1 class="text-[#111111] text-2xl">Ambulance Service Number</h1>
-                        <h2 class="font-light text-lg">Ambulance</h2>
-                        <p class="text-[#111111] font-bold text-3xl pt-3">979</p>
+                        <h2 id="name3" class="font-light text-lg">Ambulance</h2>
+                        <p id="number3" class="text-[#111111] font-bold text-3xl pt-3">979</p>
                         <div class="w-[83px] h-[37px] bg-[#f2f2f2] flex justify-center items-center rounded-full">
                             <h2 class="text-[18px] font-light">H</h2>
                         </div>
@@ -97,7 +97,7 @@
                                 class="box-border border border-[rgba(212,214,213,1)] rounded-md bg- [rgba(255,255,255,1)] w-[182px] h-[40px]"
                                 onclick="increaseCopyButton()"><span><i class="fa-regular fa-copy"></i></span>
                                 Copy</button>
-                            <button class="bg-[#00a63e] w-[182px] h-[40px] rounded-md text-[#ffffff]"><span><i
+                            <button id="call5" class="bg-[#00a63e] w-[182px] h-[40px] rounded-md text-[#ffffff]"><span><i
                                         class="fa-solid fa-phone pr-8 "></i></span>Call</button>
                         </div>
                     </div>
@@ -137,8 +137,8 @@
                     </div>
                     <div class="w-[372px] h-[55px] mx-auto pt-9">
                         <h1 class="text-[#111111] text-2xl">Police Station Number</h1>
-                        <h2 class="font-light text-lg">Police</h2>
-                        <p class="text-[#111111] font-bold text-3xl pt-3">194-999679</p>
+                        <h2 id="name4" class="font-light text-lg">Police</h2>
+                        <p id="number4" class="text-[#111111] font-bold text-3xl pt-3">194-999679</p>
                         <div class="w-[79px] h-[37px] bg-[#f2f2f2] flex justify-center items-center rounded-full">
                             <h2 class="text-[18px] font-light">P</h2>
                         </div>
@@ -147,7 +147,7 @@
                                 class="box-border border border-[rgba(212,214,213,1)] rounded-md bg- [rgba(255,255,255,1)] w-[182px] h-[40px]"
                                 onclick="increaseCopyButton()"><span><i class="fa-regular fa-copy"></i></span>
                                 Copy</button>
-                            <button class="bg-[#00a63e] w-[182px] h-[40px] rounded-md text-[#ffffff]"><span><i
+                            <button id="call6" class="bg-[#00a63e] w-[182px] h-[40px] rounded-md text-[#ffffff]"><span><i
                                         class="fa-solid fa-phone pr-8 "></i></span>Call</button>
                         </div>
                     </div>
@@ -162,8 +162,8 @@
                     </div>
                     <div class="w-[372px] h-[55px] mx-auto pt-9">
                         <h1 class="text-[#111111] text-2xl">National Emergency Number</h1>
-                        <h2 class="font-light text-lg">Emergency Number</h2>
-                        <p class="text-[#111111] font-bold text-3xl pt-3">1994-999999</p>
+                        <h2 id="name2" class="font-light text-lg">Emergency Number</h2>
+                        <p id="number2" class="text-[#111111] font-bold text-3xl pt-3">1994-999999</p>
                         <div class="w-[68px] h-[37px] bg-[#f2f2f2] flex justify-center items-center rounded-full">
                             <h2 class="text-[18px] font-light">H</h2>
                         </div>
@@ -172,7 +172,7 @@
                                 class="box-border border border-[rgba(212,214,213,1)] rounded-md bg- [rgba(255,255,255,1)] w-[182px] h-[40px]"
                                 onclick="increaseCopyButton()"><span><i class="fa-regular fa-copy"></i></span>
                                 Copy</button>
-                            <button class="bg-[#00a63e] w-[182px] h-[40px] rounded-md text-[#ffffff]"><span><i
+                            <button id="call3" class="bg-[#00a63e] w-[182px] h-[40px] rounded-md text-[#ffffff]"><span><i
                                         class="fa-solid fa-phone pr-8 "></i></span>Call</button>
                         </div>
                     </div>
@@ -213,7 +213,7 @@
                     <div class="w-[372px] h-[55px] mx-auto pt-9">
                         <h1 class="text-[#111111] text-2xl">Fire Service Number</h1>
                         <h2 id="name1" class="font-light text-lg">Fire Service</h2>
-                        <p id="number2" class="text-[#111111] font-bold text-3xl pt-3">999</p>
+                        <p id="number1" class="text-[#111111] font-bold text-3xl pt-3">999</p>
                         <div class="w-[61px] h-[37px] bg-[#f2f2f2] flex justify-center items-center rounded-full">
                             <h2 class="text-[18px] font-light">Fire</h2>
                         </div>
@@ -238,8 +238,8 @@
                     </div>
                     <div class="w-[372px] h-[55px] mx-auto pt-9">
                         <h1 class="text-[#111111] text-2xl">National Emergency Number</h1>
-                        <h2 class="font-light text-lg">Emergency Number</h2>
-                        <p class="text-[#111111] font-bold text-3xl pt-3">1994-999999</p>
+                        <h2 id="name2" class="font-light text-lg">Emergency Number</h2>
+                        <p id="number2" class="text-[#111111] font-bold text-3xl pt-3">1994-999999</p>
                         <div class="w-[73px] h-[37px] bg-[#f2f2f2] flex justify-center items-center rounded-full">
                             <h2 class="text-[18px] font-light">G</h2>
                         </div>
@@ -248,7 +248,7 @@
                                 class="box-border border border-[rgba(212,214,213,1)] rounded-md bg- [rgba(255,255,255,1)] w-[182px] h-[40px]"
                                 onclick="increaseCopyButton()"><span><i class="fa-regular fa-copy"></i></span>
                                 Copy</button>
-                            <button class="bg-[#00a63e] w-[182px] h-[40px] rounded-md text-[#ffffff]"><span><i
+                            <button id="call2" class="bg-[#00a63e] w-[182px] h-[40px] rounded-md text-[#ffffff]"><span><i
                                         class="fa-solid fa-phone pr-8 "></i></span>Call</button>
                         </div>
                     </div>
@@ -280,11 +280,11 @@
                 </div>
             </div>
             <!-- aside section -->
-            <aside class="w-[400px] h-[1140px] bg-[#ffffff] pt-6 rounded-xl">
-                <div class="w-[352px] h-[52px] sm:flex justify-between items-center mx-auto">
+            <aside class="w-full sm:w-[400px] sm:h-[1140px] bg-[#ffffff] pt-6 rounded-xl mx-auto">
+                <div class="w-full sm:w-[352px] h-auto sm:h-[52px] flex flex-col sm:flex-row justify-between items-start sm:items-center mx-auto space-y-4 sm:space-y-0">
                     <h1 id="callHistory" class="text-[#111111] font-medium text-xl mt-56"><span><i
                                 class="fa-regular fa-clock pr-8"></i></span>Call History</h1>
-                    <div class="w-[114px] h-[52px] bg-[#00a63e] rounded-[50px] flex justify-center">
+                    <div  class="w-full sm:w-[114px] h-[52px] sm:h-[52px] bg-[#00a63e] rounded-[50px] flex justify-center">
                         <button id="clearHistory" class="text-[#ffffff]">Clear</button>
                     </div>
                 </div>
